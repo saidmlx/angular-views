@@ -1,8 +1,13 @@
 
 
-
+var $ = jQuery = require("jquery");
 require('angular');
 require('angular-ui-router');
+require('bootstrap');
+
+
+
+
 
 
 angular.module('myApp',['ui.router'])
@@ -16,9 +21,12 @@ angular.module('myApp',['ui.router'])
     templateUrl:'./partials/dashboard.html',
     controller:function($scope,$rootScope){
       $scope.id=22;
-      console.info($rootScope.settings)
+      console.info($rootScope.settings);
+      //--
     }
   })
+
+
 
 }])
 .factory('settings',['$rootScope',function($rootScope){

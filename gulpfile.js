@@ -5,11 +5,18 @@ var express     = require('express');
 var connect     = require('gulp-connect');
 var livereload  = require('gulp-livereload');
 
-gulp.task('default',['html','js','server','watch'])
+var config={
+  pathBootstrap:'./node_modules/bootstrap/dist'
+}
+
+gulp.task('default',['html','copyCss','js','server','watch']);
+
 
 
 gulp.task('html',function(){
-  gulp.src('./src/**/**.html').pipe(gulp.dest('./public/'));
+  gulp.src('./src/**/**.html')
+  .pipe(gulp.dest('./public'))
+   .pipe(connect.reload());
 })
 
 gulp.task('js',function(){
@@ -18,10 +25,17 @@ gulp.task('js',function(){
   .pipe(gulp.dest('./public/'))
 })
 
+gulp.task('copyCss',function(){
+  gulp.src(config.pathBootstrap+'/css/bootstrap.css')
+  .pipe(gulp.dest('./public/css'))
+});
+
 gulp.task('watch', function () {
-  gulp.watch(['./src/*.html'], ['html']);
+  gulp.watch(['./src/**/*.html'], ['html']);
   gulp.watch(['./src/js/*.js'], ['js']);
 });
+
+
 
 
 
@@ -32,3 +46,19 @@ gulp.task('server', function() {
     port:5050
   });
 });
+
+
+
+
+/*
+
+var express = require('express');
+var app = express();
+
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});*/

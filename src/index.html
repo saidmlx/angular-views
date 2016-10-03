@@ -2,14 +2,46 @@
 <html ng-app="myApp">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>APP - template</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   </head>
   <body>
-    <h1>Wellcome!!</h1>
-    <div class=""  ui-view="">
+    <!-- navbar -->
+    <section id="header">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              ...{{settings.user}}-
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- left menu -->
+    <div class="row">
+      <div class="col-md-2">
+        
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><a ui-sref="profile.detail">Profile</a></li>
+          <li role="presentation"><a ui-sref="message.detail">Messages</a></li>
+        </ul>
+        
+      </div>
+
+      <div class="col-md-10">
+        <div ui-view></div>
+      </div>
+    </div>
 
 
     </div>
+
+    
+    
     <script src="app.js" charset="utf-8"></script>
+
   </body>
 </html>
