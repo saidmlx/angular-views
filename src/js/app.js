@@ -16,13 +16,19 @@ angular.module('myApp',['ui.router'])
   $urlRouterProvider.otherwise('/dashboard');
 
   $stateProvider
+  
+
   .state('dashboard',{
     url:'/dashboard',
     templateUrl:'./partials/dashboard.html',
     controller:function($scope,$rootScope){
-      $scope.id=22;
+      
       console.info($rootScope.settings);
-      //--
+
+      $scope.login = function(){
+        console.info('..............');
+      }
+
     }
   })
 
@@ -34,7 +40,6 @@ angular.module('myApp',['ui.router'])
     user:'anonim'
   }
   console.info('into settings ...')
-  //$rootScope.settings=settings;
   return settings
 }])
 .run(['$rootScope','$state','$location','settings',function($rootScope,$state,$location,settings){

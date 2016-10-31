@@ -6,10 +6,11 @@ var connect     = require('gulp-connect');
 var livereload  = require('gulp-livereload');
 
 var config={
-  pathBootstrap:'./node_modules/bootstrap/dist'
+  pathBootstrap:'./node_modules/bootstrap/dist',
+  pathHolder:'./node_modules/holderjs'
 }
 
-gulp.task('default',['html','copyCss','js','server','watch']);
+gulp.task('default',['html','copyCss','copyJs','js','server','watch']);
 
 
 
@@ -30,8 +31,14 @@ gulp.task('copyCss',function(){
   .pipe(gulp.dest('./public/css'))
 });
 
+gulp.task('copyJs',function(){
+  gulp.src(config.pathHolder+'/holder.js')
+  .pipe(gulp.dest('./public/js'))
+});
+
+
 gulp.task('watch', function () {
-  gulp.watch(['./src/**/*.html'], ['html']);
+  gulp.watch(['./src/**/**.html'], ['html']);
   gulp.watch(['./src/js/*.js'], ['js']);
 });
 
