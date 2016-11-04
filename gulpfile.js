@@ -24,6 +24,7 @@ gulp.task('js',function(){
   gulp.src('./src/js/app.js')
   .pipe(browserify())
   .pipe(gulp.dest('./public/'))
+  .pipe(connect.reload());
 })
 
 gulp.task('copyCss',function(){
@@ -39,7 +40,7 @@ gulp.task('copyJs',function(){
 
 gulp.task('watch', function () {
   gulp.watch(['./src/**/**.html'], ['html']);
-  gulp.watch(['./src/js/*.js'], ['js']);
+  gulp.watch(['./src/js/**/**.js'], ['js']);
 });
 
 
