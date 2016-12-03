@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html ng-app="myApp" > 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>APP - template</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fullcalendar.css">
 
 <style type="text/css">
 
@@ -49,7 +51,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-           <li ng-repeat="item in menu"  ><a href="#">{{item.description}}</a></li>
+           <li ng-repeat="item in menu"  ><a ui-sref="{{item.path}}" href="#">{{item.description}}</a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -66,28 +68,15 @@
   </div><!-- /.container-fluid -->
 </nav>
 
+<div class="well" ncy-breadcrumb>  </div>
 
     </section>
 
-    <!-- left menu -->
     
-
+    
     <div class="row container">
-      <div class="col-md-2">
-        
-
-        <ul class="nav nav-pills nav-stacked">
-          <li ng-repeat="item in menu"><a ui-sref="{{item.path}}">{{item.description}}</a></li>
-
-          <!--li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a ui-sref="profile.detail">Profile</a></li>
-          <li role="presentation"><a ui-sref="message.detail">Messages</a></li-->
-        </ul>
-        
-      </div>
-
-      <div class="col-md-10">
-        <div ui-view></div>
+      <div class="col-md-12">
+        <div ui-view miValor="A"></div>
       </div>
     </div>
 
@@ -96,8 +85,12 @@
 
     
     
-    <script src="app.js" charset="utf-8"></script>
     
+<script src="app.js" charset="utf-8"></script>
+    
+    
+    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.12/proj4.js"></script>
 
     <script src="http://code.highcharts.com/highcharts.src.js"></script>
@@ -106,14 +99,14 @@
     <script src="http://code.highcharts.com/maps/modules/map.js"></script>
 
 
-        <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
 
-        <script src="http://code.highcharts.com/mapdata/custom/world.js"></script>
-        <script src="https://code.highcharts.com/mapdata/custom/north-america-no-central.js"></script>
-        <script src="http://code.highcharts.com/mapdata/custom/world-highres2.js"></script>
-        
-<script src="https://code.highcharts.com/mapdata/custom/world-robinson-highres.js"></script>
-<script src="https://code.highcharts.com/mapdata/countries/mx/mx-all.js">
+    <script src="http://code.highcharts.com/mapdata/custom/world.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/north-america-no-central.js"></script>
+    <script src="http://code.highcharts.com/mapdata/custom/world-highres2.js"></script>
+    
+    <script src="https://code.highcharts.com/mapdata/custom/world-robinson-highres.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/mx/mx-all.js">
 
   </body>
 </html>

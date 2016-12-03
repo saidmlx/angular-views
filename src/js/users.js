@@ -7,10 +7,10 @@ require('highcharts-ng');
 require('./users/map');
 require('./users/table');
 
-angular.module('appProjects',[
+angular.module('appUsers',[
   'ui.router','highcharts-ng'
   ,'appUsersController'
-  ,'appUsersController2'
+  ,'appUsersControllerTable'
   ])
 
 
@@ -21,7 +21,7 @@ $stateProvider
 .state('users',{
     abstract:true,
     url:'/users',
-    templateUrl:'./partials/users.html',
+    templateUrl:'./partials/users/dashboard.html',
     controller:function($scope,$rootScope,$http,$state){
       
       $scope.users={};
@@ -34,15 +34,14 @@ $stateProvider
 })
 
 .state('users.dashboard',{
-    
     url:'/dashboard',
     views:{
       'map':{
-        templateUrl:'./partials/users.vMap.html',
+        templateUrl:'./partials/users/map.html',
         controller: 'usersControllerMap'
       },
       'table':{
-        templateUrl:'partials/users.vTable.html',
+        templateUrl:'partials/users/table.html',
         controller:'usersControllerTable'
       }
 

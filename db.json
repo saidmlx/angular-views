@@ -1,0 +1,346 @@
+
+{
+
+	"dataHc" :[
+        { "hc-key": "mx-3622","value": 0},         
+		{ "hc-key": "mx-bc", "value": 1         },         
+		{ "hc-key": "mx-bs", "value": 2         },         
+		{ "hc-key": "mx-so", "value": 3         },         
+		{ "hc-key": "mx-cl", "value": 4         },         
+		{ "hc-key": "mx-na", "value": 5         },         
+		{ "hc-key": "mx-cm", "value": 6         },         
+		{ "hc-key": "mx-qr", "value": 7         },         
+		{ "hc-key": "mx-mx", "value": 8         },         
+		{ "hc-key": "mx-mo", "value": 9         },         
+		{ "hc-key": "mx-df", "value": 10         },        
+		{ "hc-key": "mx-qt", "value": 11         },         
+		{ "hc-key": "mx-tb", "value": 12         },         
+		{ "hc-key": "mx-cs", "value": 13         },         
+		{ "hc-key": "mx-nl", "value": 14         },         
+		{ "hc-key": "mx-si", "value": 15         },         
+		{ "hc-key": "mx-ch", "value": 16         },         
+		{ "hc-key": "mx-ve", "value": 17         },         
+		{ "hc-key": "mx-za", "value": 18         },         
+		{ "hc-key": "mx-ag", "value": 19         },         
+		{ "hc-key": "mx-ja", "value": 20         },         
+		{ "hc-key": "mx-mi", "value": 21         },         
+		{ "hc-key": "mx-oa", "value": 22         },         
+		{ "hc-key": "mx-pu", "value": 23         },         
+		{ "hc-key": "mx-gr", "value": 24         },         
+		{ "hc-key": "mx-tl", "value": 25         },         
+		{ "hc-key": "mx-tm", "value": 26         },         
+		{ "hc-key": "mx-co", "value": 27         },         
+		{ "hc-key": "mx-yu", "value": 28         },         
+		{ "hc-key": "mx-dg", "value": 29         },         
+		{ "hc-key": "mx-gj", "value": 30         },         
+		{ "hc-key": "mx-sl", "value": 31         },         
+		{ "hc-key": "mx-hg", "value": 32         }     ],
+	
+	"projectsLocations":[
+	{"id":1,"name":"Change Management for HR","lat":32.4966818, "lon":-117.087888,  "location":"Tijuana"         ,"pm":"Annie" ,"EVM":10,"BCWS":10,"BCWP":10,"ACWP":10},
+	{"id":2,"name":"Refactoring             ","lat":20.9802116, "lon":-89.7029588,  "location":"Merida"          ,"pm":"Ross"  ,"EVM":15,"BCWS":10,"BCWP":10,"ACWP":10},
+	{"id":3,"name":"Testing Model for       ","lat":20.6409485, "lon":-105.2595439, "location":"Puerto Vallarta" ,"pm":"Sun"   ,"EVM":18,"BCWS":10,"BCWP":10,"ACWP":10},
+	{"id":4,"name":"ERP Implementation      ","lat":23.0727612, "lon":-104.7920417, "location":"Zacatecas"       ,"pm":"Annie" ,"EVM":30,"BCWS":10,"BCWP":10,"ACWP":10}
+	],
+
+	"users":[
+		{"idUser":1,"name":"Annie","rol":"Project Manager"},
+		{"idUser":2,"name":"Ross" ,"rol":"Project Manager"},
+		{"idUser":3,"name":"Moon" ,"rol":"Project Manager"},
+		{"idUser":4,"name":"Paul" ,"rol":"Developer"},
+		{"idUser":5,"name":"Beth" ,"rol":"Tester"},
+		{"idUser":6,"name":"Liz"  ,"rol":"User"},
+		{"idUser":7,"name":"Sun"  ,"rol":"Project Manager"},
+		{"idUser":8,"name":"Alberth"  ,"rol":"Project Manager"},
+		{"idUser":9,"name":"Grace"  ,"rol":"Project Manager"},
+		{"idUser":10,"name":"Sun"  ,"rol":"Project Manager"}
+	],
+
+	"menu":[
+		{"idModule":"1","description":"Home"    ,"path":"dashboard"         ,"tools":["excel","print","none"]},
+		{"idModule":"2","description":"Projects","path":"projects.dashboard","tools":["excel","print","none"]},
+		{"idModule":"3","description":"Users"   ,"path":"users.dashboard"   ,"tools":["excel","print","none"]},
+		{"idModule":"4","description":"Tasks"   ,"path":"tasks.dashboard"   ,"tools":["excel","print","none"]},
+		{"idModule":"5","description":"goals"   ,"path":"goals.dashboard"   ,"tools":["excel","print","none"]}
+	],
+
+	"messages": [
+    { "id": 1, "type": "alert", "text": "nono" },
+	{ "id": 2, "type": "warning", "text": "call me now" }
+  ],
+
+	"posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+
+	"comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+
+	"profile": { "name": "typicode" },
+
+	"tablaX": [
+        {"firstName": "juan", "lastName": "-Renard",  "birthDate": "1987-05-21","balance": 12,      "email": "juan@gmail.com"},
+        {"firstName": "ana", "lastName": "-Faivre", "birthDate": "1987-04-25","balance": 2323.22, "email": "ana@gmail.com"},
+        {"firstName": "victoria", "lastName": "-Frere", "birthDate": "1955-08-27","balance": 343,     "email": "victoria@gmail.com"}
+    ],
+	
+	"tablaY": [
+        {"firstName": "Laurent", "lastName": "Renard",  "birthDate": "1987-05-21","balance": 12,      "email": "whatever@gmail.com"},
+        {"firstName": "Blandine", "lastName": "Faivre", "birthDate": "1987-04-25","balance": 2323.22, "email": "oufblandou@gmail.com"},
+        {"firstName": "Francoise", "lastName": "Frere", "birthDate": "1955-08-27","balance": 343,     "email": "raymondef@gmail.com"}
+    ],
+	
+	
+  
+  "table1":{
+	"rowCount": 199,
+	"jsonHeadersDesc": [{
+		"name": "IdAlarma",
+		"value": "IdAlarma"
+	}, {
+		"name": "Riesgo",
+		"value": "Riesgo"
+	}, {
+		"name": "No Cliente",
+		"value": "NoCliente"
+	}, {
+		"name": "Nombre",
+		"value": "Nombre"
+	}, {
+		"name": "Segundo Nombre",
+		"value": "SegundoNombre"
+	}, {
+		"name": "Apellido Paterno",
+		"value": "ApellidoPaterno"
+	}, {
+		"name": "Apellido Materno",
+		"value": "ApellidoMaterno"
+	}, {
+		"name": "Fecha Nacimiento",
+		"value": "FechaNacimiento"
+	}, {
+		"name": "Sucursal",
+		"value": "Sucursal"
+	}, {
+		"name": "Nombre Sucursal",
+		"value": "NombreSucursal"
+	}, {
+		"name": "Estado Sucursal",
+		"value": "EstadoSucursal"
+	}, {
+		"name": "No Operaciones Envío",
+		"value": "NoOperacionesEnvio"
+	}, {
+		"name": "Productos Envío",
+		"value": "ProductosEnvio"
+	}, {
+		"name": "No Operaciones Cobro",
+		"value": "NoOperacionesCobro"
+	}, {
+		"name": "Productos Cobro",
+		"value": "ProductosCobro"
+	}, {
+		"name": "No Act. Eco.",
+		"value": "NoActEco"
+	}, {
+		"name": "Total Operaciones",
+		"value": "TotalOperaciones"
+	}, {
+		"name": "Productos",
+		"value": "Productos"
+	}, {
+		"name": "Monto Total",
+		"value": "MontoTotal"
+	}, {
+		"name": "Monto USD",
+		"value": "MontoUSD"
+	}, {
+		"name": "No Alertas",
+		"value": "NoAlertas"
+	}, {
+		"name": "Analisis",
+		"value": "Analisis"
+	}, {
+		"name": "Lista Negra",
+		"value": "ListaNegra"
+	}, {
+		"name": "Cuestionario",
+		"value": "Cuestionario"
+	}, {
+		"name": "Autorizacion Escalonada",
+		"value": "AutorizacionEscalonada"
+	}],
+	"jsonResult": [{
+		"ProductosEnvio": "D",
+		"Productos": "D",
+		"ApellidoMaterno": "",
+		"ListaNegra": 0,
+		"Cuestionario": 0,
+		"NoAlertas": 38,
+		"NoOperacionesCobro": 0,
+		"NoOperacionesEnvio": 3,
+		"Sucursal": 8623,
+		"TotalOperaciones": 3,
+		"NoActEco": 2,
+		"Nombre": "BLANCA ",
+		"IdAlarma": 2024,
+		"MontoTotal": 235.00,
+		"Analisis": 0,
+		"NoCliente": 46619,
+		"MontoUSD": 235.00,
+		"EstadoSucursal": "LA UNION",
+		"ProductosCobro": "",
+		"Riesgo": "B",
+		"ApellidoPaterno": "HDEZ",
+		"FechaNacimiento": "1960-11-02",
+		"AutorizacionEscalonada": 0,
+		"NombreSucursal": "ROSA DE LIMA",
+		"SegundoNombre": ""
+	}, {
+		"ProductosEnvio": "",
+		"Productos": "M,S",
+		"ApellidoMaterno": "",
+		"ListaNegra": 0,
+		"Cuestionario": 0,
+		"NoAlertas": 20,
+		"NoOperacionesCobro": 2,
+		"NoOperacionesEnvio": 0,
+		"Sucursal": 8640,
+		"TotalOperaciones": 2,
+		"NoActEco": 2,
+		"Nombre": "MARIA",
+		"IdAlarma": 2025,
+		"MontoTotal": 110.00,
+		"Analisis": 0,
+		"NoCliente": 52999,
+		"MontoUSD": 110.00,
+		"EstadoSucursal": "SAN SALVADOR",
+		"ProductosCobro": "M,S",
+		"Riesgo": "B",
+		"ApellidoPaterno": "HDEZ",
+		"FechaNacimiento": "1970-02-17",
+		"AutorizacionEscalonada": 0,
+		"NombreSucursal": "DEK PLAZA METROPOLIS",
+		"SegundoNombre": ""
+	}, {
+		"ProductosEnvio": "",
+		"Productos": "B,M",
+		"ApellidoMaterno": "",
+		"ListaNegra": 0,
+		"Cuestionario": 0,
+		"NoAlertas": 36,
+		"NoOperacionesCobro": 2,
+		"NoOperacionesEnvio": 0,
+		"Sucursal": 8598,
+		"TotalOperaciones": 2,
+		"NoActEco": 2,
+		"Nombre": "MARIA",
+		"IdAlarma": 2026,
+		"MontoTotal": 190.00,
+		"Analisis": 0,
+		"NoCliente": 51679,
+		"MontoUSD": 190.00,
+		"EstadoSucursal": "SAN SALVADOR",
+		"ProductosCobro": "B,M",
+		"Riesgo": "B",
+		"ApellidoPaterno": "HDEZ",
+		"FechaNacimiento": "1978-12-14",
+		"AutorizacionEscalonada": 0,
+		"NombreSucursal": "DEK SOYAPANGO EL SALVADOR",
+		"SegundoNombre": ""
+	}, {
+		"ProductosEnvio": "D",
+		"Productos": "D",
+		"ApellidoMaterno": "SIN APELLIDO MATERNO",
+		"ListaNegra": 0,
+		"Cuestionario": 0,
+		"NoAlertas": 9,
+		"NoOperacionesCobro": 0,
+		"NoOperacionesEnvio": 2,
+		"Sucursal": 8619,
+		"TotalOperaciones": 2,
+		"NoActEco": 2,
+		"Nombre": "JORGE ALBERTO",
+		"IdAlarma": 2027,
+		"MontoTotal": 950.00,
+		"Analisis": 0,
+		"NoCliente": 49070,
+		"MontoUSD": 950.00,
+		"EstadoSucursal": "SAN SALVADOR",
+		"ProductosCobro": "",
+		"Riesgo": "B",
+		"ApellidoPaterno": "HDEZ",
+		"FechaNacimiento": "1969-05-28",
+		"AutorizacionEscalonada": 0,
+		"NombreSucursal": "DEK AGUILARES",
+		"SegundoNombre": ""
+	}, {
+		"ProductosEnvio": "",
+		"Productos": "M",
+		"ApellidoMaterno": "",
+		"ListaNegra": 0,
+		"Cuestionario": 0,
+		"NoAlertas": 21,
+		"NoOperacionesCobro": 3,
+		"NoOperacionesEnvio": 0,
+		"Sucursal": 8640,
+		"TotalOperaciones": 3,
+		"NoActEco": 2,
+		"Nombre": "MARIA",
+		"IdAlarma": 2028,
+		"MontoTotal": 300.00,
+		"Analisis": 0,
+		"NoCliente": 49833,
+		"MontoUSD": 300.00,
+		"EstadoSucursal": "SAN SALVADOR",
+		"ProductosCobro": "M",
+		"Riesgo": "B",
+		"ApellidoPaterno": "HDEZ",
+		"FechaNacimiento": "1979-10-31",
+		"AutorizacionEscalonada": 0,
+		"NombreSucursal": "DEK PLAZA METROPOLIS",
+		"SegundoNombre": ""
+	}, {
+		"IdAlarma": 2222,
+		"Riesgo": "B",
+		"No Cliente": 45346,
+		"Nombre": "ROSA ",
+		"Segundo Nombre": " ",
+		"Apellido Paterno": "HDEZ",
+		"Apellido Materno": "CAMPOS ",
+		"Fecha Nacimiento": "1970-09-21",
+		"Sucursal": 8621,
+		"Nombre Sucursal": "DEK CHALCHUAPA ",
+		"Estado Sucursal": "SANTA ANA ",
+		"No Operaciones Envío": 1,
+		"Productos Envío": "M ",
+		"No Operaciones Cobro": 2,
+		"Productos Cobro": "A,B ",
+		"No Act. Eco.": 2,
+		"Total Operaciones": 3,
+		"Productos": "A,B,M ",
+		"Monto Total": 444.00,
+		"Monto USD": 444.00,
+		"No Alertas": 20,
+		"Analisis": 0,
+		"Lista Negra": 0,
+		"Cuestionario": 0,
+		"Autorizacion Escalonada": 0,
+		"Reporte": 0
+	}],
+	"message": {
+		"info": "",
+		"style": "message-info",
+		"show": false
+	},
+	"state": {
+		"message": "success.bd",
+		"success": true,
+		"statuCode": "OK",
+		"show": false,
+		"styleMessage": "alert-success",
+		"styleIcon": "fa fa-check"
+	}
+}
+}

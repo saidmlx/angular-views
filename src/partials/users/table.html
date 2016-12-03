@@ -1,0 +1,32 @@
+
+<div class="panel panel-primary">
+	<div class="panel-heading">All Projects</div>
+	<div class="panel-body">		 
+		<!-- Map container -->
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Project manager</th>
+					<th>Location</th>
+					<th>EVM</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat = "item in projects">
+					<td >{{item.pm}}</td>
+					<td >{{item.location}}</td>
+					<td >{{item.evm}}</td>
+				</tr>
+			</tbody>
+
+			</table>
+
+	</div>
+  	<div  class="panel-footer">
+  	<!-- footer contet-->
+  	<div class="actualdata">+++</div>
+  	</div>
+</div>
+
+
+

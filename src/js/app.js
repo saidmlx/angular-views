@@ -5,13 +5,26 @@ var $ = jQuery = require("jquery");
 
 require('angular');
 require('angular-ui-router');
-require('bootstrap');
+//require('bootstrap');
+//require('angular-ui-bootstrap');
+require('angular-breadcrumb');
 
 //--own files
 require('./projects');
 require('./users');
+require('./tasks');
+require('./goals');
 
-angular.module('myApp',['ui.router','appProjects'])
+
+angular.module('myApp',['ui.router', 'ncy-angular-breadcrumb', 'appProjects', 'appUsers', 'appTasks', 'appGoals'])
+//--breadcrumbs
+ .config(function($breadcrumbProvider) {
+    $breadcrumbProvider.setOptions({
+      prefixStateName: 'dashboard',
+      template: 'bootstrap3',
+      includeAbstract:true
+    });
+  })
 
 //--load defaults
 .config(['userServiceProvider',function(userServiceProvider){
@@ -45,6 +58,9 @@ angular.module('myApp',['ui.router','appProjects'])
         $rootScope.menu=response.data
         console.info($rootScope.menu)
       });
+    },
+    ncyBreadcrumb: {
+      label: 'Dashboard'
     }
 
   })
@@ -80,10 +96,19 @@ angular.module('myApp',['ui.router','appProjects'])
     };
   };
 })
-.run(['$rootScope','$state','$location','settings',function($rootScope,$state,$location,settings){
+.run(['$rootScope','$state','$location','settings','$breadcrumb',function($rootScope,$state,$location,settings,$breadcrumb){
   $rootScope.$state     = $state;     // state to be accessed from view
   $rootScope.$location  = $location;  // location to be accessed from view
   $rootScope.settings   = settings;   // global settings to be accessed from view
   $rootScope.user       = {'idUser': '0','name':'Anonim'}; // global settings to be accessed from view
+
+  $rootScope.isActive = function(stateName) {
+      return $state.includes(stateName);
+    }
+
+    $rootScope.getLastStepLabel = function() {
+      return 'Angular-Breadcrumb';
+    }
+
   
 }])
